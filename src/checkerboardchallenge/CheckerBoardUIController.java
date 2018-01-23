@@ -43,7 +43,6 @@ public class CheckerBoardUIController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
        
         //set on actions here so you can use same function to change board size
-        System.out.println("init called");
         three.setOnAction((ActionEvent event) -> {
             changeBoardSize(3);
         });
@@ -92,7 +91,7 @@ public class CheckerBoardUIController implements Initializable {
             checkerBoard.build();
             currentBoard = checkerBoard;
             container.getChildren().add(1, checkerBoard.getBoard());
-            container.getChildren().remove(2); //remove old board
+            container.getChildren().remove(2);
         }
     }
     
