@@ -36,6 +36,7 @@ public class CheckerBoardUIController implements Initializable {
     @FXML
     public VBox container;
     
+    //keep track of the current board, no need to access container children, faster
     private CheckerBoard currentBoard = null;
     private final int MENUBAR_HEIGHT = 29;
     
