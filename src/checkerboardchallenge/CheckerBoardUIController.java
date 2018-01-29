@@ -98,7 +98,7 @@ public class CheckerBoardUIController implements Initializable {
     
     @FXML
     public void changeColorDefault(){
-        if(currentBoard.getLightColor() == Color.LIGHTBLUE){ 
+        if(currentBoard.getLightColor() == Color.SKYBLUE){ 
             CheckerBoard checkerBoard = new CheckerBoard(currentBoard.getNumRows(), currentBoard.getNumCols(), currentBoard.getWidth(), currentBoard.getHeight());
             checkerBoard.build();
             currentBoard = checkerBoard;
